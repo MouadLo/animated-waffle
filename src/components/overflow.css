@@ -1,0 +1,8 @@
+.App div {
+  background-color: #EEE;
+  height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow-y: hidden;
+}

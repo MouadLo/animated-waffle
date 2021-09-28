@@ -1,0 +1,53 @@
+/* 
+  Pseudo class
+*/
+
+.App .one {
+	background-color: red;
+	color: white;
+}
+
+.App .two {
+	background-color: #eee;
+	width: 100px;
+	height: 100px;
+}
+
+.App a {
+	color: green;
+	text-decoration: none;
+}
+
+.App a:hover {
+	color: red;
+}
+
+.App .ch:checked + label {
+	color: red;
+}
+
+.App a:visited {
+	color: violet;
+}
+
+/* 
+  Pseudo Elements
+*/
+
+.App .paragraphe::first-letter {
+	display: inline-block;
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.App .three::first-line {
+	color: green;
+	display: inline;
+}
+
+.App .four::selection {
+	background-color: black;
+	color: yellow;
+}

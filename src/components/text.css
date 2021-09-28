@@ -1,0 +1,40 @@
+/* Text color
+    -- background-color
+    -- color
+
+  Text shadow
+  Syntax => text-shadow: H-Shadow V-Shadow Blur Color
+
+  Text Alignement
+  -- Alignement
+  -- Direction
+  -- Vertical Alignment
+
+  Text Decoration
+  Teext Transformation
+
+  .App div {
+  background-color: #f9f9f9;
+  text-transform: capitalize;
+}
+
+.App a {
+  background-color: aqua;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+*/
+
+.App div {
+  width: 200px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

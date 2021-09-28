@@ -1,0 +1,51 @@
+/* 
+ Block
+ - Take full Width if no width
+ - Add line break
+ - Respect Margin Padding width height
+
+
+ Inline
+ - Do Not Respect Width, Height
+ - Do Not  Add line break
+ - Respect Margin Padding [ just left right]
+ 
+  
+
+ Inline-Block
+ - Allow element Before and after it
+ - Respect Margin Padding width height
+ - 
+
+
+*/
+
+
+.one {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.two {
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+.three {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+
+.four {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.one,
+.two,
+.three,
+.four {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #EEE;
+}

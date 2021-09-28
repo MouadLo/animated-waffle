@@ -1,0 +1,25 @@
+.App .parent {
+	width: 600px;
+	overflow: hidden;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #ddd;
+}
+.one {
+	background-color: #eee !important;
+	width: 100px;
+	float: left;
+	padding: 10px;
+	border: 2px solid #131921;
+	transition-duration: 1s;
+	transition-property: width, margin-left, margin-top;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0.2s;
+	text-align: center;
+}
+
+.one:hover {
+	margin-left: 220px;
+	margin-top: 20px;
+	width: 150px;
+}

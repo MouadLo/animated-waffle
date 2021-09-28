@@ -1,0 +1,25 @@
+/* 
+  Float
+  Clear
+*/
+
+.App .parent {
+
+}
+
+.App .parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: calc((100% - 60px)/ 5);
+  float: left;
+  margin-left: 10px;
+}
+
+/* 
+ Content Width is : 100%
+ 5 spaces 1 * 5% from content width
+ 95% Available Space
+ 4 Elements the width is: 95% / 4
+*/
