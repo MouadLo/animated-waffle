@@ -21,23 +21,32 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.flex {
+.App div {
+	width: 400px;
+	height: 200px;
 	background-color: #eee;
-	width: 800px;
-	padding: 20px;
 	margin: 20px auto;
-	display: inline-flex;
+	position: relative;
+	padding: 10px;
 }
-.flex div {
-	background-color: #f00;
-	color: white;
-	width: 80px;
-	text-align: center;
-	padding: 20px;
-	margin-right: 5px;
-	flex-grow: 1;
-	flex-basis: 30px;
-}
-.in {
-	display: inline-block;
+
+.App div:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	background-color: red;
+	height: 5px;
+	background-image: linear-gradient(
+		to right,
+		#2980b9 20%,
+		#25d46e 20%,
+		#25d46e 40%,
+		#d35400 40%,
+		#d35400 60%,
+		#d3ff00 60%,
+		#d3ff00 80%,
+		#ff55ed 80%
+	);
 }
