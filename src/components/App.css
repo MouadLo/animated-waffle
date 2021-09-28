@@ -1,52 +1,32 @@
 /*
-  Flexible Box
-  For Parent
-  - display: flex => To Start Flexible Box
-  - flex-direction: row => Default Value
-  - flex-wrap: nowrap => Default Value
-  - flex-flow: [Flex-Direction] + [Flex-Wrap]
-  - justify-content: flex-start => Default Value
-  - align-items: stretch => Default Value
-  - align-content: stretch => Default Value
-  For Child
-  - flex-grow: 0 => Default Value
-  - flex-shrink: 1 => Default Value
-  - order: 0 => Default Value
-  - flex-basis: auto => Default Value
-  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows : [Number of Row in] => [Px, %, auto]
+  - gap: [Row gap] [Column gap]
 */
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.App div {
-	width: 400px;
-	height: 200px;
-	background-color: #eee;
+.parent {
 	margin: 20px auto;
-	position: relative;
-	padding: 10px;
+	width: 800px;
+	height: 500px;
+	background-color: #ddd;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: repeat(3, auto);
+	gap: 10px 10px;
+	justify-content: space-evenly;
+	align-content: space-between;
 }
-
-.App div:before {
-	content: '';
-	position: absolute;
-	top: -5px;
-	left: 0;
-	width: 100%;
+.parent div {
 	background-color: red;
-	height: 5px;
-	background-image: linear-gradient(
-		to right,
-		#2980b9 20%,
-		#25d46e 20%,
-		#25d46e 40%,
-		#d35400 40%,
-		#d35400 60%,
-		#d3ff00 60%,
-		#d3ff00 80%,
-		#ff55ed 80%
-	);
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
